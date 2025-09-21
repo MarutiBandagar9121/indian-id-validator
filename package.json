@@ -1,0 +1,45 @@
+{
+  "name": "indian-data-validator",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "description": "An npm package for validating various india based documents like aadhar, pan ,gst, indian mobile numbers and etc..",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports":{
+    ".":{
+      "import":"./dist/esm/index.js",
+      "require":"./dist/cjs/index.js"
+    },
+    "./validators/*":{
+      "import":"./dist/esm/validators/index.js",
+      "require":"./dist/cjs/validators/index.js"
+    }
+  },
+  "scripts": {
+    "build:esm":"tsc -p tsconfig.json",
+    "build:cjs":"tsc -p tsconfig.cjs.json",
+    "build":"npm run build:esm && npm run build:cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarutiBandagar9121/indian-data-validator.git"
+  },
+  "keywords": [
+    "indian data validator",
+    "data validation",
+    "indian documents"
+  ],
+  "author": "Maruti Bandagar",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MarutiBandagar9121/indian-data-validator/issues"
+  },
+  "homepage": "https://github.com/MarutiBandagar9121/indian-data-validator#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
