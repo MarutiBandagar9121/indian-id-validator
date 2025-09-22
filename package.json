@@ -1,5 +1,5 @@
 {
-  "name": "indian-data-validator",
+  "name": "indian-id-validator",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarutiBandagar9121/indian-data-validator.git"
+    "url": "git+https://github.com/MarutiBandagar9121/indian-id-validator.git"
   },
   "keywords": [
     "indian data validator",
@@ -36,9 +36,9 @@
   "author": "Maruti Bandagar",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/MarutiBandagar9121/indian-data-validator/issues"
+    "url": "https://github.com/MarutiBandagar9121/indian-id-validator/issues"
   },
-  "homepage": "https://github.com/MarutiBandagar9121/indian-data-validator#readme",
+  "homepage": "https://github.com/MarutiBandagar9121/indian-id-validator#readme",
   "devDependencies": {
     "typescript": "^5.9.2"
   }
