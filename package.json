@@ -1,28 +1,23 @@
 {
   "name": "indian-id-validator",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "type": "module",
   "files": [
     "dist"
   ],
   "description": "An npm package for validating various india based documents like aadhar, pan ,gst, indian mobile numbers and etc..",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
-  "exports":{
-    ".":{
-      "import":"./dist/esm/index.js",
-      "require":"./dist/cjs/index.js"
-    },
-    "./validators/*":{
-      "import":"./dist/esm/validators/index.js",
-      "require":"./dist/cjs/validators/index.js"
+  "main": "./dist/index.cjs.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
-    "build:esm":"tsc -p tsconfig.json",
-    "build:cjs":"tsc -p tsconfig.cjs.json",
-    "build":"npm run build:esm && npm run build:cjs"
+    "build": "vite build",
+    "dev": "vite build --watch",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -40,6 +35,8 @@
   },
   "homepage": "https://github.com/MarutiBandagar9121/indian-id-validator#readme",
   "devDependencies": {
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
