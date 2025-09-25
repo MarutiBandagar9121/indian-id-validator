@@ -1,8 +1,6 @@
-// Test ESM
 import { ValidateAadhar } from '../dist/index.es.js';
-console.log('ESM Test:', ValidateAadhar(' jbhsvc jbxjasb bj   '));
+import { validatePanNumber } from '../dist/index.es.js';
 
-// Test CJS
-// const ValidateAadhar = require('../dist/index.cjs.js');
-// console.log('CJS Test:', ValidateAadhar('123456789012'));
+console.log('ESM Test:', ValidateAadhar('7014 2424 2674'));
+console.log("pan test: ",validatePanNumber(" Exdpb4910A"));
 

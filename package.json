@@ -6,12 +6,12 @@
     "dist"
   ],
   "description": "An npm package for validating various india based documents like aadhar, pan ,gst, indian mobile numbers and etc..",
-  "main": "./dist/index.cjs.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.es.js"
     }
   },
   "scripts": {
